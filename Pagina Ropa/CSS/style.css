@@ -1,0 +1,236 @@
+header{ 
+background-color: burlywood;
+width: 100%;
+height: 100%;
+}
+#logo{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+#Titulo{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    background: linear-gradient(90deg, white, rgb(53, 51, 51), rgb(252, 227, 196));
+    background-size: 200%;
+    background-clip: text;
+    color: transparent;
+    animation: hola 3s infinite alternate;
+}
+@keyframes hola {
+    0%{
+        background-position:0%;
+    }
+    100%{
+        background-position:200%;
+    }
+}
+li{
+    display: inline;
+    font-size: 23px;
+    padding-inline: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#links{
+    color: black;
+    margin-top: 40px;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+ul{
+    position: absolute;
+    top: 20px;
+    left: 1600px;
+    color: black;
+}
+.category{
+    background-color: rgb(252, 227, 196);
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 400px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    transition: transform 0.5s ease;
+}
+.category:hover{
+    transform: translateY(40px);
+}
+.category2{
+    background-color:rgb(214, 233, 187);
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    transition: transform 0.5s ease;
+}
+.category2:hover{
+    transform: translateY(40px);
+}
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+.items{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.item{
+    background-size:cover;
+    background-position: center;
+    padding: 20px;
+    width: 200px;
+    height: 340px;
+    text-align: center;
+}
+.item img{
+    max-width: 230px;
+    display: block;
+    margin: 0 auto;
+    max-height: 310px;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+}
+.item:hover img{
+    transform: translateX(-30px);
+}
+#ropa{
+    height: 310px; 
+    width: 400px; 
+}
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px; 
+}
+form{
+    box-shadow: 0 0 15px black;
+    border-radius: 15px;
+    animation: aparecer 0.8s ease;
+}
+@keyframes aparecer {
+    from{
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+#formulario{
+    width: 600px;
+    height: 500px;
+    margin-top: 150px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:wheat;
+    background-size: cover;
+    border-radius: 20px;
+    margin-left: 650px;
+}
+label{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+input{
+    width: 400px;
+    height: 20px;
+    border-radius: 5px;
+    box-shadow: black;
+}
+#enviar{
+    margin: 20px;
+    background-color:rgb(214, 233, 187);
+    height: 40px;
+    width: 80px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #Titulo {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    nav {
+        width: 100%;
+    }
+
+     ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+        padding: 0;
+    }
+    li {
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 10px;
+        border-radius: 10px;
+     }
+
+    .items {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+        padding: 0;
+     }
+
+    .item {
+        width: 80%;
+    }
+}
+.category, .category2 {
+    display: inline-block; 
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 30px;
+    transition: transform 0.5s ease;
+}
+.category, .category2 {
+    width: 90%; 
+    margin-left: 5%; 
+    margin-top: 15px;
+}
+
+
+@media (max-width: 480px) {
+    #Titulo {
+        font-size: 24px;
+    }
+
+    nav li {
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    input {
+        height: 25px;
+    }
+}
+
